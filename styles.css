@@ -203,7 +203,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     height: 90%;
     text-align: center;
@@ -244,7 +244,7 @@
     border-bottom: 4px solid rgb(132,0,255);
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
     .hero_heading{
         font-size: 60px;
     }
@@ -376,7 +376,7 @@
     background: linear-gradient(to right, #dd2476, #ff512f);
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1300px){
     .main_container{
         display: grid;
         grid-template-columns: 1fr;
@@ -484,13 +484,70 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbdb 0%, #fc00ff 100%);
+    /*background-image: linear-gradient(to right, #00dbdb 0%, #fc00ff 100%);*/
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #12c2e9, #c471ed, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: 0.3 ease-in;
 }
 
 .services_card:nth-child(2){
     background: #f12711;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #b92b27, #f64f59);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b92b27, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.services_card:nth-child(3){
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.services_card h2{
+    text-align: center;
+}
+
+.services_card p{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.services_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.services_card button{
+    color: #ffff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.services_card button:hover{
+    cursor: pointer;
+}
+
+.services_card:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px){
+    .services_wrapper{ /*need to fix*/
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .services_wrapper{
+        grid-template-columns: 1fr;
+    }
 }
