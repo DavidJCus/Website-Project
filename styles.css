@@ -370,6 +370,10 @@
     font-size: 24rem;
 }
 
+.glyphicon-envelope{
+    font-size: 24rem;
+}
+
 #card-2{
     background: #ff512f;
     background: -webkit-linear-gradient(to right, #dd2476, #ff512f); 
